@@ -1,5 +1,4 @@
-//
-export const events = (state = [], action) => {
+const events = (state = [], action) => {
   switch (action.type) {
     case "CREATE_EVENT":
       const event = { title: action.title, body: action.body };
@@ -20,5 +19,4 @@ export const events = (state = [], action) => {
       return state;
   }
 };
-const action = { type: CREATE_EVENT, title: "TEST", body: "Dummy data" };
-events(action);
+export default events;
